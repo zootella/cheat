@@ -40,7 +40,7 @@
 		filesonly = yes  Store only file entries
 		-->
 		<jar
-			jarfile="work/pipe.jar"
+			jarfile="work/cheat.jar"
 			basedir="ant"
 			filesonly="yes">
 
