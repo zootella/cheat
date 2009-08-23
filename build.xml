@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="build">
+	<target name="build" description="Compile and package the source code into a jar">
+
+		<!-- Delete temporary folders to make everything again from scratch -->
+		<delete dir="ant"/>
+		<delete file="work/cheat.jar"/>
+		
+		<!-- Copy trees of files to ant so they'll get bundled into the jar -->
+		<copy todir="ant"><fileset dir="resource"/></copy><!-- Resource files -->
+		<copy todir="ant"><fileset dir="source"/></copy><!-- Source code to put documentation in tooltips -->
+
+		<!--
+		Compile all the .java files into .class files
+
+		debug = yes        Include debug information in the .class files
+		destdir            Where to put the .class files
+		source and target  Use Java version 1.6
+		-->
+		<javac
+			debug="yes"
+			destdir="ant"
+			source="1.6"
+			target="1.6">
+
+			<!-- Compile the code in these folders, each has a tree of .java files in it -->
+			<src path="source"/>
+
+			<!-- Tell the Java compiler where .jar files are that the code above uses -->
+			<classpath>
+			</classpath>
+		</javac>
+
+		<!--
+		Bundle files together to make the jar
+
+		jarfile          Where to make the .jar file, this will overwrite a file already there
+		basedir          Find the files to put in the jar here
+		filesonly = yes  Store only file entries
+		-->
+		<jar
+			jarfile="work/pipe.jar"
+			basedir="ant"
+			filesonly="yes">
+
+			<!-- No manifest for this library jar -->
+		</jar>
+
+	</target>
+</project>
