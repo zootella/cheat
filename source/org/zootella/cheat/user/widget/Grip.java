@@ -1,6 +1,5 @@
 package org.zootella.cheat.user.widget;
 
-import java.awt.Color;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.event.MouseAdapter;
@@ -20,8 +19,10 @@ public class Grip {
 		
 		label = new JLabel();
 		label.setBounds(rectangle);
+		/*
 	    label.setBackground(new Color(0xdedede)); //TODO remove this later
 	    label.setOpaque(true);
+	    */
 	    
 	    label.addMouseListener(new MyMouseListener());
 	    label.addMouseMotionListener(new MyMouseMotionListener());
