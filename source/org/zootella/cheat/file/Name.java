@@ -38,14 +38,14 @@ public class Name {
 	/** Turn this Name into a String like "name.ext". */
 	public String toString() {
 		String s = name;
-		if (Text.hasText(extension)) s += "." + extension; // Only add the period if we have an extension
+		if (Text.is(extension)) s += "." + extension; // Only add the period if we have an extension
 		return s;
 	}
 	
 	/** true if this Name is blank, toString() will give you "". */
 	public boolean isBlank() { return Text.isBlank(toString()); }
 	/** true if this Name has text, toString() won't give you "". */
-	public boolean hasText() { return Text.hasText(toString()); }
+	public boolean hasText() { return Text.is(toString()); }
 	
 	// -------- Make a new Name based on this one --------
 	
