@@ -24,9 +24,9 @@ public class ClearButton {
 		label.setBounds(place);
 
 		//actually not clear
-		/*
 		label.setBackground(new Color(0xffffff));
 		label.setOpaque(true);
+		/*
 		*/
 		
 		

@@ -6,7 +6,6 @@ import java.awt.Toolkit;
 
 import org.zootella.cheat.data.Number;
 
-
 public class Screen {
 	
 	// Library
