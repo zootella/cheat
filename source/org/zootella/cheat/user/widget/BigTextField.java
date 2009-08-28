@@ -8,7 +8,7 @@ import javax.swing.JTextField;
 
 public class BigTextField {
 	
-	public BigTextField(Rectangle place, Font font) {
+	public BigTextField(Font font, Rectangle place) {
 		field = new JTextField();
 		field.setLayout(null);
 		field.setBounds(place);

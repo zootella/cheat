@@ -85,18 +85,18 @@ public class Window extends Close {
 		
 		
 		
-		exit = new ClearButton(exitAction, Guide.exit, null, "Exit");
-		close = new ClearButton(closeAction, Guide.close, null, "Close");
-		choose = new ClearButton(chooseAction, Guide.choose, "Shared", "Choose Folder");
-		open = new ClearButton(openAction, Guide.open, null, null);
+		exit = new ClearButton(exitAction, Guide.font, Guide.exit, null, "Exit");
+		close = new ClearButton(closeAction, Guide.font, Guide.close, null, "Close");
+		choose = new ClearButton(chooseAction, Guide.font, Guide.choose, "Shared", "Choose Folder");
+		open = new ClearButton(openAction, Guide.font, Guide.open, null, null);
 		
-		nameLabel = new ClearLabel(Guide.nameLabel, "Name");
-		extLabel = new ClearLabel(Guide.extLabel, "Ext");
+		nameLabel = new ClearLabel(Guide.font, Guide.nameLabel, "Name");
+		extLabel = new ClearLabel(Guide.font, Guide.extLabel, "Ext");
 		
-		name = new BigTextField(Guide.name, Guide.bigFont);
-		ext = new BigTextField(Guide.ext, Guide.smallFont);//TODO change back to bigFont
+		name = new BigTextField(Guide.bigFont, Guide.name);
+		ext = new BigTextField(Guide.font, Guide.ext);//TODO change back to bigFont
 		
-		status = new ClearLabel(Guide.status, null);
+		status = new ClearLabel(Guide.font, Guide.status, null);
 		
 		panel.add(exit.label);
 		panel.add(close.label);

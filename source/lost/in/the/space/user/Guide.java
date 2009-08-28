@@ -17,7 +17,7 @@ public class Guide {
 	public static final int extWidth = 80;
 	
 	/** The small font ends up this many pixels high on the screen. */
-	public static final int small = 14;
+	public static final int line = 14;
 	/** Make text boxes that hold the big font this many pixels high. */
 	public static final int big = 40;
 	
@@ -28,8 +28,8 @@ public class Guide {
 	private static int nameWidth() { return window.width - margin(3) - extWidth; }
 	
 	private static int a = top;
-	private static int b = a + small + margin.height;
-	private static int c = b + small;
+	private static int b = a + line + margin.height;
+	private static int c = b + line;
 	private static int d = c + big + margin.height;
 
 	// Place
@@ -37,16 +37,16 @@ public class Guide {
 	public static final Rectangle exit = new Rectangle(327, 0, 25, 19);
 	public static final Rectangle close = new Rectangle(352, 0, 44, 19);
 	
-	public static final Rectangle choose = new Rectangle(margin(1), a, chooseWidth, small);
-	public static final Rectangle open = new Rectangle(margin(2) + chooseWidth, a, openWidth(), small);
+	public static final Rectangle choose = new Rectangle(margin(1), a, chooseWidth, line);
+	public static final Rectangle open = new Rectangle(margin(2) + chooseWidth, a, openWidth(), line);
 
-	public static final Rectangle nameLabel = new Rectangle(margin(1), b, nameWidth(), small);
-	public static final Rectangle extLabel = new Rectangle(margin(2) + nameWidth(), b, extWidth, small);
+	public static final Rectangle nameLabel = new Rectangle(margin(1), b, nameWidth(), line);
+	public static final Rectangle extLabel = new Rectangle(margin(2) + nameWidth(), b, extWidth, line);
 
 	public static final Rectangle name = new Rectangle(margin(1), c, nameWidth(), big);
 	public static final Rectangle ext = new Rectangle(margin(2) + nameWidth(), c, extWidth, big);
 	
-	public static final Rectangle status = new Rectangle(margin(1), d, window.width - margin(2), small);
+	public static final Rectangle status = new Rectangle(margin(1), d, window.width - margin(2), line);
 
 	// Paths to images
 
@@ -62,6 +62,6 @@ public class Guide {
 	
 	// Font
 	
-	public static final Font smallFont = new Font("Tahoma", Font.PLAIN, 11);
+	public static final Font font = new Font("Tahoma", Font.PLAIN, 11);
 	public static final Font bigFont = new Font("Arial", Font.PLAIN, 24);
 }
