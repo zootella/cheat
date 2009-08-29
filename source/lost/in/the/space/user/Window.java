@@ -90,7 +90,7 @@ public class Window extends Close {
 		choose = new ClearButton(chooseAction, Guide.font, Guide.choose, "Shared", "Choose Folder");
 		open = new ClearButton(openAction, Guide.font, Guide.open, null, null);
 		
-		nameLabel = new ClearLabel(Guide.font, Guide.nameLabel, "Name");
+		nameLabel = new ClearLabel(Guide.font, Guide.nameLabel, "Keyword");
 		extLabel = new ClearLabel(Guide.font, Guide.extLabel, "Ext");
 		
 		name = new BigTextField(Guide.bigFont, Guide.name);

@@ -16,7 +16,7 @@ public class Guide {
 	public static final int chooseWidth = 50;
 	public static final int extWidth = 80;
 	
-	/** The small font ends up this many pixels high on the screen. */
+	/** The small font ends up this many pixels high on the screen in both Windows and Mac. */
 	public static final int line = 14;
 	/** Make text boxes that hold the big font this many pixels high. */
 	public static final int big = 40;
