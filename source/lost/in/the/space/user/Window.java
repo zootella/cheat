@@ -65,7 +65,13 @@ public class Window extends Close {
 		chooseAction = new ChooseAction();
 		openAction = new OpenAction();
 		
-		exit = new ClearButton(exitAction, Guide.font, Guide.exit, null, "Exit");
+		String exitDesktop;
+		if (Desktop.hasDock())
+			exitDesktop = "Quit";
+		else
+			exitDesktop = "Exit";
+		
+		exit = new ClearButton(exitAction, Guide.font, Guide.exit, null, exitDesktop);
 		close = new ClearButton(closeAction, Guide.font, Guide.close, null, "Close");
 		choose = new ClearButton(chooseAction, Guide.font, Guide.choose, "Shared", "Choose Folder");
 		open = new ClearButton(openAction, Guide.font, Guide.open, null, "Open Folder");
