@@ -13,8 +13,8 @@ public class Guide {
 	public static final Dimension margin = new Dimension(10, 14);
 	
 	public static final int top = 247;
-	public static final int chooseWidth = 50;
-	public static final int extWidth = 80;
+	public static final int chooseWidth = 40;
+	public static final int extWidth = 100;
 	
 	/** The small font ends up this many pixels high on the screen in both Windows and Mac. */
 	public static final int line = 14;

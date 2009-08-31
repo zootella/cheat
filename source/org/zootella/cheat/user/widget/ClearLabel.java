@@ -19,9 +19,9 @@ public class ClearLabel {
 			label.setText(s);
 		
 		//actually not clear
+		/*
 		label.setBackground(new Color(0xcccccc));
 		label.setOpaque(true);
-		/*
 		 */
 		
 		
